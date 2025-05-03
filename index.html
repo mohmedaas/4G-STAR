@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4G STOR</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin: 1rem;
+    }
+    nav a {
+      background-color: #4a90e2;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    section {
+      padding: 1rem;
+      max-width: 600px;
+      margin: auto;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #4a90e2;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button.submit {
+      background-color: #4a90e2;
+      color: white;
+      margin-top: 1rem;
+      width: 100%;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>4G STOR</h1>
+    <p>خدمات شحن الشدات، التوكنز، والجواهر</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#login">تسجيل الدخول</a>
+  </nav>
+
+  <section>
+    <h2>طلب شحن</h2>
+    <form>
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="game">اختر اللعبة</label>
+      <select id="game" name="game" required>
+        <option value="pubg">ببجي</option>
+        <option value="freefire">فري فاير</option>
+        <option value="ml">موبايل ليجند</option>
+      </select>
+
+      <label for="amount">الكمية المطلوبة</label>
+      <input type="number" id="amount" name="amount" required>
+
+      <label for="payment">طريقة الدفع</label>
+      <select id="payment" name="payment" required>
+        <option value="syriaTel">سيرياتيل كاش</option>
+        <option value="payeer">بايير</option>
+      </select>
+
+      <label for="details">ملاحظات أو رقم الحساب</label>
+      <textarea id="details" name="details"></textarea>
+
+      <button type="submit" class="submit">أرسل الطلب</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>تسجيل الدخول</h2>
+    <form>
+      <label for="username">اسم المستخدم</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">كلمة المرور</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit" class="submit">دخول</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>للتواصل: 4G STOR - جميع الحقوق محفوظة &copy; 2025</p>
+  </footer>
+</body>
+</html>
